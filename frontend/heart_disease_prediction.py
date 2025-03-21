@@ -38,7 +38,7 @@ def heart_disease_prediction_tab():
                        "5 or more years ago": 2, "Never": 1}
     diabetes_mapping = {"No": 0, "Yes": 1, "No, pre-diabetes or borderline diabetes": 0.5,
                         "Yes, but female told only during pregnancy": 0.5}
-    age_mapping = {"0-18": 0 "18-24": 1, "25-29": 2, "30-34": 3, "35-39": 4, "40-44": 5,
+    age_mapping = {"0-18": 0, "18-24": 1, "25-29": 2, "30-34": 3, "35-39": 4, "40-44": 5,
                    "45-49": 6, "50-54": 7, "55-59": 8, "60-64": 9, "65-69": 10, "70-74": 11, "75-79": 12, "80+": 13}
 
     # User Inputs
