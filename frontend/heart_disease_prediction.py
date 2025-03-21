@@ -81,22 +81,22 @@ def heart_disease_prediction_tab():
                              index=None)
 
     with col3:
-        fried_potato = st.number_input('Fried Potato Consumption',
+        fried_potato = st.number_input('Fried Potato Consumption (pieces)',
                                        min_value=0,
                                        max_value=200,
                                        value=None,
                                        placeholder="--")
-        alcohol = st.number_input('Alcohol Consumption',
+        alcohol = st.number_input('Alcohol Consumption (ltr)',
                                   min_value=0,
                                   max_value=50,
                                   value=None,
                                   placeholder="--")
-        green_vegetables = st.number_input('Green Vegetables Consumption',
+        green_vegetables = st.number_input('Green Vegetables Consumption (pieces)',
                                            min_value=0,
                                            max_value=200,
                                            value=None,
                                            placeholder="--")
-        fruit_consumption = st.number_input('Fruit Consumption',
+        fruit_consumption = st.number_input('Fruit Consumption (pieces)',
                                             min_value=0,
                                             max_value=200,
                                             value=None,
