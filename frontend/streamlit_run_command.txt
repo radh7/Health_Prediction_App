@@ -1,0 +1,1 @@
+streamlit run "/Users/rad7/Documents/Desktop/AIML lab/MINI PROJECT/frontend/Disease prediction.py"
