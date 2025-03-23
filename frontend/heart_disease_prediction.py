@@ -153,11 +153,9 @@ def heart_disease_prediction_tab():
     if st.button("Heart Disease Test"):
         prediction = heart_disease_model.predict([input_data])
         diagnosis = (
-                    f"✅ Hi {name}!
-                    You don't have Heart Disease"
+                    f"✅ Hi {name}! You ain't predicted for Heart Disease"
                     if prediction[0] == 0
-                    else f"⚠️ Hi {name}!
-                    You may have Heart Disease"
+                    else f"⚠️ Hi {name}! You are predicted to have Heart Disease"
                 )
         # Create a placeholder for the pop-up
         pop_up = st.empty()
