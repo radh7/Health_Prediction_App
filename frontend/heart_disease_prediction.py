@@ -42,6 +42,7 @@ def heart_disease_prediction_tab():
                    "45-49": 6, "50-54": 7, "55-59": 8, "60-64": 9, "65-69": 10, "70-74": 11, "75-79": 12, "80+": 13}
 
     # User Inputs
+    name = st.text_input("Enter your name")
     col1, col2, col3 = st.columns(3)
     with col1:
         general_health = st.selectbox("General Health",
@@ -151,7 +152,7 @@ def heart_disease_prediction_tab():
 
     if st.button("Heart Disease Test"):
         prediction = heart_disease_model.predict([input_data])
-        diagnosis = "✅ No Heart Disease" if prediction[0] == 0 else "⚠️ Positive for Heart Disease"
+        diagnosis = f"✅Hi {name}!!\n You don't have Heart Disease" if prediction[0] == 0 else "⚠️Hi {name}!!\n You may have Heart Disease"
 
         # Create a placeholder for the pop-up
         pop_up = st.empty()
